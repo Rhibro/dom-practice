@@ -148,14 +148,14 @@
 // Purpose:
 // Practice using different types of selectors to retrieve elements from the DOM.
 
-let getHeader = document.getElementById("header");
-console.log(getHeader);
-let getFirstClass = document.getElementsByClassName("description");
-console.log(getFirstClass);
-let getQuery = document.querySelector(".item");
-console.log(getQuery);
-let getAllQuery = document.querySelectorAll(".item");
-console.log(getAllQuery);
+// let getHeader = document.getElementById("header");
+// console.log(getHeader);
+// let getFirstClass = document.getElementsByClassName("description");
+// console.log(getFirstClass);
+// let getQuery = document.querySelector(".item");
+// console.log(getQuery);
+// let getAllQuery = document.querySelectorAll(".item");
+// console.log(getAllQuery);
 // let gettheElement = document.querySelector('[data-info="important"]');
 // console.log(gettheElement);
 
@@ -201,8 +201,8 @@ element.innerHTML = `
 // using properties such as parentNode, children, firstElementChild,
 // lastElementChild, nextElementSibling, and previousElementSibling.
 
-let lastItem = document.querySelector('ul li:nth-child(3)');
-lastItem.textContent = 'Last item';
+// let lastItem = document.querySelector('ul li:nth-child(3)');
+// lastItem.textContent = 'Last item';
 
 // Exercise 10: Changing Styles of Multiple Elements with Loops
 // Task:
@@ -227,14 +227,14 @@ lastItem.textContent = 'Last item';
 //     li.style.backgroundColor = 'gray';
 // });
 
-let changeStyles = document.querySelectorAll('li.item, p.description');
-changeStyles.forEach((element) => {
-    if (element.tagName === 'LI') {
-        element.style.backgroundColor = 'grey';
-    } else if (element.tagName === 'P') {
-        element.style.color = 'blue';
-    }
-});
+// let changeStyles = document.querySelectorAll('li.item, p.description');
+// changeStyles.forEach((element) => {
+//     if (element.tagName === 'LI') {
+//         element.style.backgroundColor = 'grey';
+//     } else if (element.tagName === 'P') {
+//         element.style.color = 'blue';
+//     }
+// });
 
 // Exercise 11: Comparing textContent, innerText and innerHTML
 
@@ -321,3 +321,12 @@ console.log(getLink);
 // Purpose:
 // Practice manipulating classList to add and remove CSS classes on elements.
 
+let items = document.querySelectorAll('li.item');
+
+if (items[1]) {
+    items[1].classList.add('hidden');
+} 
+ 
+if (items[0]) {
+    items[0].classList.add('prominence');
+}
