@@ -1,5 +1,20 @@
 console.log("onsdags övningar");
 
+let btn = document.getElementById('minKnapp');
+
+btn.addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log('you have clicked the button!');
+})
+
+let blueDiv = document.getElementById('ruta');
+blueDiv.addEventListener('mouseover', function () {
+    blueDiv.style.backgroundColor = 'red';
+});
+blueDiv.addEventListener('mouseout', function () {
+    blueDiv.style.backgroundColor = 'purple';
+});
+
 // Exercise 1: Simple Counter
 
 // Task:
@@ -16,6 +31,22 @@ console.log("onsdags övningar");
 // When "Decrease" is clicked, decrease the value by 1 and update the text.
 // Purpose:
 // Practice handling click events and updating the DOM based on user interaction.
+
+let counterEle = document.getElementById('counter');
+let increaseBtn = document.getElementById('increaseBtn');
+let decreaseBtn = document.getElementById('decreaseBtn');
+
+let counterValue = 0;
+
+increaseBtn.addEventListener('click', function() {
+    counterValue += 1;
+    counterEle.textContent = counterValue;
+});
+
+decreaseBtn.addEventListener('click', function() {
+    counterValue -= 1;
+    counterEle.textContent = counterValue;
+});
 
 // ------------------------------------------------------------------------
 
@@ -34,6 +65,24 @@ console.log("onsdags övningar");
 // Purpose:
 // Practice handling form events and validating user input.
 
+let userInput = document.getElementById('namn');
+let submitBtn = document.getElementById('submitBtn');
+let message = document.getElementById('message');
+
+submitBtn.addEventListener('click', function(event){
+    event.preventDefault();
+
+    if (userInput.value.trim() === '') {
+        message.textContent = 'Please enter something';
+        message.style.color = 'red';
+    } else {
+        message.textContent = 'Submitted!';
+        message.style.color = 'green';
+        userInput.value = '';
+    }
+   
+});
+
 // ------------------------------------------------------------------------
 
 // Exercise 3: Change Image on Mouse Hover
@@ -48,6 +97,14 @@ console.log("onsdags övningar");
 // When the mouse leaves the image, change it back to image1.jpg.
 // Purpose:
 // Practice handling mouse events and changing attributes on elements.
+
+let image = document.getElementById('imgOne');
+image.addEventListener('mouseover', function () {
+    image.src = '/DOM-Manipulation/images/green-dog.jpg';
+});
+image.addEventListener('mouseout', function () {
+    image.src = '/DOM-Manipulation/images/blue-dog.jpg';
+});
 
 // ------------------------------------------------------------------------
 

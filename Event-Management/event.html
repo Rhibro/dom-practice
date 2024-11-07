@@ -5,27 +5,29 @@
     <title>Händelsehantering Övningar</title>
   </head>
   <body>
-    <!-- Exempel för Code Along -->
+    <button id="minKnapp">Klicka på mig!</button>
+    <div
+      id="ruta"
+      style="width: 100px; height: 100px; background-color: blue"
+    ></div>
+
     <h1 id="rubrik">Välkommen!</h1>
-    <button id="ändraKnapp">Ändra Text</button>
+   
 
-    <!-- Övning 1: Räknare -->
-    <h2>Räknare</h2>
-    <p id="räknare">0</p>
-    <button id="ökaKnapp">Öka</button>
-    <button id="minskaKnapp">Minska</button>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <p id="counter">0</p>
 
-    <!-- Övning 2: Formulär -->
-    <h2>Formulärvalidering</h2>
-    <form id="mittFormulär">
-      <input type="text" id="textFält" placeholder="Skriv något" />
-      <input type="submit" value="Skicka" />
+
+    <!-- Formulär för submit-exempel -->
+    <form id="mittFormular">
+      <label for="namn">Namn:</label>
+      <input type="text" id="namn" name="namn" required />
+      <button id="submitBtn" type="submit">Submit</button>
+      <p id="message"></p>
     </form>
-    <p id="meddelande"></p>
 
-    <!-- Övning 3: Bildändring -->
-    <h2>Ändra Bild vid Musöver</h2>
-    <img id="minBild" src="images/hoodie-ash.png" alt="Bild" width="200" />
+<img id="imgOne" src="/DOM-Manipulation/images/blue-dog.jpg">
 
     <script src="event.js"></script>
   </body>
