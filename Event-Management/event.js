@@ -1,71 +1,57 @@
-// 1
+console.log("onsdags övningar");
 
-let h3Element = document.querySelector('h3');
-h3Element.innerHTML = 'Potato';
+// Exercise 1: Simple Counter
 
-// 2
+// Task:
+// Create two buttons:
 
-let homeTag = document.querySelector('a');
-homeTag.innerHTML = 'Start';
+// One with id="increaseButton" and the text "Increase".
+// One with id="decreaseButton" and the text "Decrease".
+// **Add a p element with id="counter" that displays the initial value of 0.
 
-// 3
+// Use JavaScript to:
 
-let contactTag = document.querySelectorAll('nav a');
-contactTag.forEach(link => {
-    if (link.textContent === 'Contact') {
-        link.textContent = 'Mail us';
-    }
-});
+// Add event listeners to the buttons.
+// When "Increase" is clicked, increase the value by 1 and update the text in the p element.
+// When "Decrease" is clicked, decrease the value by 1 and update the text.
+// Purpose:
+// Practice handling click events and updating the DOM based on user interaction.
 
-// 4
+// ------------------------------------------------------------------------
 
-let changeInfo = document.querySelectorAll('main p');
-if (changeInfo[1]) {
-    changeInfo[1].textContent = 'This is the best sweater we have. Not only is it super warm but it is also super stylish!';
-}
+// Exercise 2: Form Validation
 
-// 5
+// Task:
+// Create a form with a text field (input type="text") and a button (input type="submit").
 
-let btnOne = document.querySelector('button');
+// Use JavaScript to:
 
-btnOne.style.backgroundColor = '#2A527E';
-btnOne.style.color = 'black';
+// Listen for the form's submit event.
+// Prevent the default behavior (prevent the page from reloading) using event.preventDefault().
+// Ensure the text field is not empty.
+// If it is empty, display an error message below the form.
+// If it is not empty, display a confirmation.
+// Purpose:
+// Practice handling form events and validating user input.
 
-// 6
+// ------------------------------------------------------------------------
 
-let backgrdColor = document.querySelectorAll('article');
-if (backgrdColor[2]){
-    backgrdColor[2].style.backgroundColor = '#2A527E';
-}
+// Exercise 3: Change Image on Mouse Hover
 
-// 7
+// Task:
+// Add an image (img) with id="myImage" and src="image1.jpg".
 
-let switchAddress = document.querySelectorAll('p');
-if (switchAddress[3]) {
-    switchAddress[3].textContent = 'Main Street 14  \n 123 45, Happy Town';
-}
+// Use JavaScript to:
 
-// 8
+// Listen for mouseover and mouseout events on the image.
+// When the mouse is over the image, change the src to image2.jpg.
+// When the mouse leaves the image, change it back to image1.jpg.
+// Purpose:
+// Practice handling mouse events and changing attributes on elements.
 
-// let switchcolor = document.querySelectorAll('p');
-// if (switchcolor[0] && switchcolor[1] && switchcolor[2] && switchcolor[3]) {
-//     switchcolor[0].style.color = 'blue';
-//     switchcolor[1].style.color = 'blue';
-//     switchcolor[2].style.color = 'blue';
-//     switchcolor[3].style.color = 'blue';
-// } 
+// ------------------------------------------------------------------------
 
-let switchcolor = document.querySelectorAll('p');
-for (let i = 0; i < switchcolor.length; i++) {
-    switchcolor[i].style.color = 'blue';
-}
+// Additional exercises to reinforce yesterday's and today's topics are available here:
+// https://github.com/FJSX24/fjsx24vecka45/tree/wednesday-6nov-DOM-Bootcamp
 
-// 9
-
-let btnColour = document.querySelectorAll('button');
-for (let i = 0; i < btnColour.length; i++) {
-    btnColour[i].textContent = 'Add to cart';
-}
-
-// 10
-
+// If you finish early, feel free to experiment and add new addEventListener functions.
