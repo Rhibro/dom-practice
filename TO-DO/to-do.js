@@ -49,7 +49,7 @@ function renderTodos() {
         
         // Create delete button
         const deleteBtn = document.createElement('button');
-        deleteBtn.textContent = 'Delete';
+        deleteBtn.textContent = 'Remove';
         deleteBtn.onclick = () => handleAction('delete', todo.id);
         
         // Append elements
